@@ -20,10 +20,8 @@
     "pinkie": "^2.0.4",
     "read-file-relative": "^1.2.0",
     "request": "^2.67.0",
-    "sauce-connect-launcher": "^1.2.5",
-    "wd": "^1.2.0"
-  },
-  "devDependencies": {
+    "sauce-connect-launcher": "github:fpoppinga/sauce-connect-launcher#eu-datacenter",
+    "wd": "^1.2.0",
     "babel-eslint": "^4.0.5",
     "del": "^2.1.0",
     "eslint": "^1.9.0",
@@ -31,6 +29,9 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.0",
     "gulp-eslint": "^1.0.0"
+  },
+  "scripts": {
+    "postinstall": "gulp build"
   },
   "files": [
     "lib"
